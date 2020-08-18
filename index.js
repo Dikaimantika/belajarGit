@@ -28,3 +28,17 @@ function Stack() {
         return this.data;
     }
 };
+
+function celciusToRandF(){
+    var nilai = parseInt(document.getElementById("nilai").value);
+    var satuanAkhir = document.getElementById("satuanAkhir").value;
+    var result = 0;
+
+    if(satuanAkhir == "r")
+      result = nilai * 4/5 ;
+    else if(satuanAkhir == "f")
+      result = nilai * 9/5  + 32;
+    
+    console.log("Suhu "+result+" "+satuanAkhir);
+
+}
